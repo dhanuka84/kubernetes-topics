@@ -11,7 +11,7 @@ namespace: default
 # list of resources to be applied
 resources:
   - deployment.yaml
-  - sealed-secrets/sealed-sample-secret.yaml
+  - sealed-secrets/sealed-secret.yaml
 
 # make sealed-secrets to use name of the secrets with hash value
 configurations:
@@ -26,8 +26,8 @@ configurations:
 
 # list of secrets
 # generate empty secrets to provide hashed names for deployments
-secretGenerator:
-  - name: sample-secret
-    type: Opaque
+#secretGenerator:
+ # - name: mysecret
+  #  type: Opaque
     # might be used during initial generation of Secrets
     # env: secrets/sample-secret.txt

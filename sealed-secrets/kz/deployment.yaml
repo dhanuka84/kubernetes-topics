@@ -14,7 +14,7 @@ spec:
       containers:
       - envFrom:
         - secretRef:
-            name: sample-secret
+            name: mysecret
         image: nginx:latest
         name: sample-service
         resources:
